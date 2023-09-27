@@ -1,0 +1,163 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+
+}
+
+body {
+	background-color: black;
+
+}
+.description {
+	margin-top: 1rem;
+	font-family: Tahoma;
+	font-size: 25px;
+	font-weight: 400;
+	color: white;
+	
+}
+.title {
+	color: white;
+	font-family: Trebuchet MS;
+	font-weight: 700;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.item_preTitle {
+	font-family: Impact;
+	font-size: 30px;
+	color:yellowgreen;
+	font-weight: 300;
+}
+.item_title {
+	font-family: Arial;
+	font-size: 30px;
+	color: white;
+	font-weight: 600;
+	margin: 0.8rem 0
+
+}
+.item_subtitle {
+	font-family: trebuchet MS;
+	font-style: italic;
+	font-size: 25px;
+	color: yellow;
+	font-weight: 400;
+}
+
+/* layouts */
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 0 auto;
+	display:grid;
+	padding: 10rem;
+	background: #070707;
+	grid-template-columns: 1fr 1fr;
+	gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 7rem;
+		gap: 7rem;
+	}
+}
+.profile {
+	grid-column: 1 / -1;
+	margin-bottom: 1rem;
+}
+.background,
+.aboutMe {
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+/* profile */
+.profile_container {
+	display: flex;
+    margin-top: 5rem;
+	gap: 7rem;
+}
+.profile_profileImg {
+	max-width: 250px;
+}
+.profile_name_firstName {
+	color: white;
+	font-family: Segoe UI;
+	font-weight: 700;
+	font-size: clamp(2rem, 10vw, 5rem);
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: -0.8rem;
+}
+.profile_name_lastName {
+	color: red;
+	font-family:Arial;
+	font-weight: 700;
+	font-size: clamp(2.5rem, 15vw, 7rem);
+	text-transform: uppercase;
+	display: block;
+}
+.profile_name_nickName {
+    color: yellow;
+	font-family: Cambria;
+	font-style: italic;
+	font-weight: 300;
+	font-size: clamp(1rem, 5vw, 2rem);
+	display: block;
+}
+.profile_title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+
+}
+@media only screen and (max-width: 768px) {
+	.profile_container {
+		flex-direction: column;
+	}
+}
+
+/* Info */
+.contacts_list {
+	color: yellow;
+    font-size: 30px;
+	margin-top: 1rem;
+	margin-left: 2rem;
+	line-height: 2;
+}
+
+.lang_list {
+	color: green;
+	font-family: monospace;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+/* eduction */
+.edu_item {
+	margin-top: 2rem;
+}
+
+/*family*/
+.fam_title {
+	color: rgb(251, 0, 84);
+	font-family: monospace;
+	font-size: 35px;
+}
+.fam_item {
+	color: aqua;
+	font-family: Verdana;
+	font-size: 30px;
+}
+/* Interests */
+
+.interest_item {
+	color: violet;
+	font-family: trebuchet;
+	font-size: 30px;
+}
